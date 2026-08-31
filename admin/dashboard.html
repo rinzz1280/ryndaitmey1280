@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        background: #f1f5f9;
+        display: flex;
+    }
+
+    .sidebar {
+        width: 230px;
+        min-height: 100vh;
+        background: #1e293b;
+        color: white;
+        padding: 30px 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .menu div {
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        color: #cbd5e1;
+    }
+
+    .menu div:hover,
+    .menu .active {
+        background: #568628;
+        color: white;
+    }
+
+    .main {
+        flex: 1;
+        padding: 40px;
+    }
+
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .header h1 {
+        color: #1e293b;
+        font-size: 32px;
+    }
+
+    .header p {
+        color: #64748b;
+        margin-top: 8px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    }
+
+    .card h3 {
+        color: #64748b;
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .card h2 {
+        color: #1e293b;
+        font-size: 30px;
+    }
+
+    @media (max-width: 800px) {
+        .sidebar {
+            width: 180px;
+        }
+
+        .cards {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+
+</head>
+
+<body>
+
+
+<aside class="sidebar">
+    <div class="logo">ADMIN</div>
+
+    <div class="menu">
+        <div class="active">Dashboard</div>
+        <div>Users</div>
+        <div>Staff</div>
+        <div>Products</div>
+        <div>Settings</div>
+    </div>
+</aside>
+
+<main class="main">
+
+    <div class="header">
+        <h1>Admin Dashboard</h1>
+        <p>Welcome back, Admin!</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Users</h3>
+            <h2>1,250</h2>
+        </div>
+
+        <div class="card">
+            <h3>Total Staff</h3>
+            <h2>25</h2>
+        </div>
+
+        <div class="card">
+            <h3>Total Products</h3>
+            <h2>350</h2>
+        </div>
+
+    </div>
+
+</main>
+
+
+</body>
+</html>
